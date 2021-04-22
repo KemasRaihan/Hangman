@@ -18,6 +18,10 @@ public class Main {
 
     public static void playHangman(){
         System.out.println("You are now playing Hangman...");
+
+        String secretWord = "Hello";
+
     }
+
 
 }
