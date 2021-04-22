@@ -12,7 +12,12 @@ public class Main {
     public static void welcomePlayer(){
         System.out.println("Welcome to Hangman!");
         System.out.println("Press 'Enter' to play.");
-        input.nextLine();
+        input.nextLine();                               // Let player press 'Enter'
+        playHangman();
+    }
+
+    public static void playHangman(){
+        System.out.println("You are now playing Hangman...");
     }
 
 }
