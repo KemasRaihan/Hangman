@@ -28,6 +28,8 @@ public class Main {
         System.out.println("Guess a letter...");
         printHiddenCharacters(secretWordCharacterArray);
 
+        letUserEnterLetter();
+
     }
 
     public static char[] convertStringIntoCharactersArray(String word){
@@ -36,9 +38,14 @@ public class Main {
 
     public static void printHiddenCharacters(char[] charArray){
         for(int i = 0; i < charArray.length; i++){
-            if(charArray[i]==' ') System.out.print(" ");
-            else System.out.print("_");
+            if(charArray[i]==' ') System.out.print(" ");        // If character is a space then, there would be an empty character instead of a underline
+            else System.out.print("_");                         // If character is not a space, then print an underline
         }
+    }
+
+    public static void letUserEnterLetter(){
+        System.out.println("Enter your guess: ");
+        char guessedLetter = input.nextLine().charAt(0);     // Let user enter a string then get the first character of the string
     }
 
 
