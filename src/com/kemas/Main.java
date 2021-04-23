@@ -28,7 +28,7 @@ public class Main {
         System.out.println("Guess a letter...");
         printHiddenCharacters(secretWordCharacterArray);
 
-        letUserEnterLetter();
+        char guessedLetter= letUserEnterLetter();
 
     }
 
@@ -43,9 +43,10 @@ public class Main {
         }
     }
 
-    public static void letUserEnterLetter(){
+    public static char letUserEnterLetter(){
         System.out.println("Enter your guess: ");
         char guessedLetter = input.nextLine().charAt(0);     // Let user enter a string then get the first character of the string
+        return guessedLetter;
     }
 
 
